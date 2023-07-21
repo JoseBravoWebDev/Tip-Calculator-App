@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <!-- Settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Style and Site Icon -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Title and SEO -->
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="canonical" href="">
+  <meta name="robots" content="index"/>
+  <meta name="description" 
+    content="">
+</head>
+<!-- Body -->
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="title">SPLI<br>TTER</h1>
+    </div>
+  </header>
+  <!-- End Header -->
+  
+  <!-- Main Content -->
+  <main>
+    <section>
+      <div class="container">
+        <div class="config-tip">
+          <form action="#">
+            <div class="amount-container">
+              <p class="text">Bill</p>
+              <label for="amount" class="label">
+                <img src="images/icon-dollar.svg" alt="Dollar Icon">
+                <input type="number" name="Amount" id="amount" step="0.01" min="0" placeholder="0">
+              </label>
+            </div>
+
+            <div class="tip-container">
+              <p class="text">Select Tip %</p>
+              <div class="percentage-options">
+                <label for="radio" class="percentage-btn default">
+                  <input type="radio" name="radio" value="5">5%
+                </label>
+
+                <label for="radio" class="percentage-btn default">
+                  <input type="radio" name="radio" value="10">10%
+                </label>
+
+                <label for="radio" class="percentage-btn default">
+                  <input type="radio" name="radio" value="15">15%
+                </label>
+
+                <label for="radio" class="percentage-btn default">
+                  <input type="radio" name="radio" value="25">25%
+                </label>
+
+                <label for="radio" class="percentage-btn default">
+                  <input type="radio" name="radio" value="50">50%
+                </label>
+                
+                <input type="number" name="Percentage" id="percentage" placeholder="Custom" step="0.01" min="0">
+              </div>
+            </div>
+
+            <div class="people-container">
+              <div>
+                <p class="text">Number of People</p>
+                <p class="error-text">Can't be zero</p>
+              </div>
+              <label for="number-people" class="label">
+                <img src="images/icon-person.svg" alt="Person Icon">
+                <input type="number" name="Number of People" id="number-people" placeholder="0">
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <div class="result-tip">
+          <div class="result-container">
+
+            <div class="result-screen-grid">
+              <div class="result-screen">
+                <div class="result-info">
+                  <p>Tip Amount</p>
+                  <p>/ person</p>
+                </div>
+                <p class="tip-amount">$0.00</p>
+              </div>
+
+              <div class="result-screen">
+                <div class="result-info">
+                  <p>Total</p>
+                  <p>/ person</p>
+                </div>
+                <p class="total-amount">$0.00</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <button class="reset-btn">RESET</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- End Main Content -->
+  
+<!-- Footer -->
+  <footer>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </footer>
+<!-- End Footer -->
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
